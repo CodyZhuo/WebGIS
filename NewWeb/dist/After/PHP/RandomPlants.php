@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // $arr=array();
 // $count1=0;
 // $count = 0;
@@ -39,13 +39,13 @@ function get_rand_number($start=1,$end=10,$length=4){
     sort($data);  
     return $data;  
 }  
-$conn = pg_connect("host=192.168.1.108 port=5432 dbname=Sanhuanpao user=postgres password=cxj0401");//连接数据库
+$conn = pg_connect("host=localhost port=5432 dbname=Sanhuanpao user=postgres password=lily520");//连接数据库
 $hope = get_rand_number(1,300,48);
 $Kresult = array();
 
  for ($i=0; $i < 48; $i++) { 
 		
-	$result= pg_query ($conn,"SELECT name,picture  FROM plants1 WHERE name_id = '$hope[$i]'");
+	$result= pg_query ($conn,"SELECT name,picture  FROM plants WHERE name_id = '$hope[$i]'");
 	$arr = pg_fetch_all($result);//先提取为数组，再合并
 	// $aarr = pg_fetch_all($rresult);
  	$Kresult = array_merge((array)$arr,(array)$Kresult);

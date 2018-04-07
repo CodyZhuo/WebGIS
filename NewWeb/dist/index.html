@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
@@ -13,6 +13,16 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
+<!--     <link rel="stylesheet" type="text/css" href="http://localhost/api319/arcgis_js_api/library/3.19/3.19/dijit/themes/tundra/tundra.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost/api319/arcgis_js_api/library/3.19/3.19/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/api319/arcgis_js_api/library/3.19/3.19/esri/css/esri.css" />
+    <script src="http://localhost/api319/arcgis_js_api/library/3.19/3.19/init.js"></script> -->
+
+
+     <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.21compact/esri/css/esri.css">
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://js.arcgis.com/3.21compact/"></script>
 
 
 
@@ -102,11 +112,11 @@
                         <!-- <h1 id="fh5co-logo"><a href="index.html">保护区</a></h1> -->
                         <nav id="fh5co-main-menu" role="navigation" >
                             <ul>
-                                <li class="fh5co-active"><a href="index.html">首页</a></li>
+                                <li class="fh5co-active"><a href="http://10.10.11.94/WebGIS/">首页</a></li>
                                 <li><a href="Brief Introduction/Brief Introduction.html">保护区概况</a></li>
                                 <li><a href="Work Trends/Work Trends.html">通知公告</a></li>
-                                <li><a href="Animal and Plant Resources/Animal and Plant Resources.html">动植物资源</a></li>
-                                <li><a href="View.html">保护区GIS系统</a></li>
+                                <li><a href="http://10.10.11.94:8090/NewWeb/dist/Animal and Plant Resources/Plant/Protective Plant.html">植物资源</a></li>
+                                <li><a href="../shp" target="blank">保护区GIS系统</a></li>
                             </ul>
                         </nav>  <!-- fh5co-main-menu -->
 
@@ -120,49 +130,7 @@
 
                     <div id="fh5co-main" style="position: relative;">
                         <aside id="fh5co-hero" class="js-fullheight">
-                            <div class="flexslider js-fullheight">
-                                <ul class="slides">
-                                    <li style="background-image: url(images/img_cbg_1.jpg);">
-                                        <div class="overlay"></div>
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                                                    <div class="slider-text-inner">
-                                                        <h1>东方灵山    佛祖道场</h1>
-                                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> 秀美风光</a> </p>
-                                                    </div>    <!-- slider-text-inner -->
-                                                </div>   <!-- col-md-8 col-md-offset-2 text-center -->
-                                            </div>    <!-- row -->
-                                        </div>   <!-- container-fluid -->
-                                    </li>
-                                    <li style="background-image: url(images/img_cbg_2.jpg);">
-                                        <div class="overlay"></div>
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                                                    <div class="slider-text-inner">
-                                                        <h1>自然“森”呼吸 动物“林”距离</h1>
-                                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href="#"> <i class="icon-monitor"></i> 拥抱自然</a> </p>
-                                                    </div>   <!-- slider-text-inner -->
-                                                </div>    <!-- col-md-8 col-md-offset-2 text-center -->
-                                            </div>    <!-- row -->
-                                        </div>    <!-- container-fluid -->
-                                    </li>
-                                    <li style="background-image: url(images/img_cbg_3.jpg);">
-                                        <div class="overlay"></div>
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                                                    <div class="slider-text-inner">
-                                                        <h1>江南画卷    水乡古镇</h1>
-                                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> 舒适体验</a> </p>
-                                                    </div>   <!-- slider-text-inner -->
-                                                </div>    <!-- col-md-8 col-md-offset-2 text-center -->
-                                            </div>   <!-- row -->
-                                        </div>   <!-- container-fluid -->
-                                    </li>
-                                </ul>
-                            </div>    <!-- flexslider js-fullheight -->
+                           <div id ="mapDiv" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'" style="background-color: #F3F2F2;height: 700px;padding-top: 30px;padding-left: 30px;padding-bottom: 30px;padding-right: 30px;" >
                         </aside>    <!-- fh5co-hero -->
 
                         <div class="fh5co-narrow-content">
@@ -314,6 +282,8 @@
 
 <!-- MAIN JS -->
 <script src="js/main.js"></script>
+
+<script src="js/Function/Map.js"></script>
 
 
 

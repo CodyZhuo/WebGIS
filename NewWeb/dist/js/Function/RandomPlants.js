@@ -1,4 +1,4 @@
-$.get("../../After/PHP/RandomPlants.php",function(data,status){
+﻿$.get("../../After/PHP/RandomPlants.php",function(data,status){
      myArr = JSON.parse(data);   
 
      alert(typeof(myArr));     
@@ -114,63 +114,63 @@ $.get("../../After/PHP/RandomPlants.php",function(data,status){
      var elm47 = document.getElementById('PP47'); 
      var elm48 = document.getElementById('PP48'); 
 
+   
 
 
 
 
+     elm1.style.background = "url("+myArr[0].picture.split(",")[0]+")";  //引号括起来的地方都当作是字符串
+     elm2.style.background = "url("+myArr[1].picture.split(",")[0]+")";         
+     elm3.style.background = "url("+myArr[2].picture.split(",")[0]+")"; 
+     elm4.style.background = "url("+myArr[3].picture.split(",")[0]+")"; 
+     elm5.style.background = "url("+myArr[4].picture.split(",")[0]+")"; 
+     elm6.style.background = "url("+myArr[5].picture.split(",")[0]+")"; 
+     elm7.style.background = "url("+myArr[6].picture.split(",")[0]+")"; 
+     elm8.style.background = "url("+myArr[7].picture.split(",")[0]+")"; 
+     elm9.style.background = "url("+myArr[8].picture.split(",")[0]+")"; 
+     elm10.style.background = "url("+myArr[9].picture.split(",")[0]+")"; 
 
-     elm1.style.background = "url("+myArr[0].picture+")";  //引号括起来的地方都当作是字符串
-     elm2.style.background = "url("+myArr[1].picture+")";         
-     elm3.style.background = "url("+myArr[2].picture+")"; 
-     elm4.style.background = "url("+myArr[3].picture+")"; 
-     elm5.style.background = "url("+myArr[4].picture+")"; 
-     elm6.style.background = "url("+myArr[5].picture+")"; 
-     elm7.style.background = "url("+myArr[6].picture+")"; 
-     elm8.style.background = "url("+myArr[7].picture+")"; 
-     elm9.style.background = "url("+myArr[8].picture+")"; 
-     elm10.style.background = "url("+myArr[9].picture+")"; 
+     elm11.style.background = "url("+myArr[10].picture.split(",")[0]+")";  //引号括起来的地方都当作是字符串
+     elm12.style.background = "url("+myArr[11].picture.split(",")[0]+")"; 
+     elm13.style.background = "url("+myArr[12].picture.split(",")[0]+")"; 
+     elm14.style.background = "url("+myArr[13].picture.split(",")[0]+")"; 
+     elm15.style.background = "url("+myArr[14].picture.split(",")[0]+")"; 
+     elm16.style.background = "url("+myArr[15].picture.split(",")[0]+")"; 
+     elm17.style.background = "url("+myArr[16].picture.split(",")[0]+")"; 
+     elm18.style.background = "url("+myArr[17].picture.split(",")[0]+")"; 
+     elm19.style.background = "url("+myArr[18].picture.split(",")[0]+")"; 
+     elm20.style.background = "url("+myArr[19].picture.split(",")[0]+")"; 
 
-     elm11.style.background = "url("+myArr[10].picture+")";  //引号括起来的地方都当作是字符串
-     elm12.style.background = "url("+myArr[11].picture+")"; 
-     elm13.style.background = "url("+myArr[12].picture+")"; 
-     elm14.style.background = "url("+myArr[13].picture+")"; 
-     elm15.style.background = "url("+myArr[14].picture+")"; 
-     elm16.style.background = "url("+myArr[15].picture+")"; 
-     elm17.style.background = "url("+myArr[16].picture+")"; 
-     elm18.style.background = "url("+myArr[17].picture+")"; 
-     elm19.style.background = "url("+myArr[18].picture+")"; 
-     elm20.style.background = "url("+myArr[19].picture+")"; 
+     elm21.style.background = "url("+myArr[20].picture.split(",")[0]+")";  //引号括起来的地方都当作是字符串
+     elm22.style.background = "url("+myArr[21].picture.split(",")[0]+")"; 
+     elm23.style.background = "url("+myArr[22].picture.split(",")[0]+")"; 
+     elm24.style.background = "url("+myArr[23].picture.split(",")[0]+")"; 
+     elm25.style.background = "url("+myArr[24].picture.split(",")[0]+")"; 
+     elm26.style.background = "url("+myArr[25].picture.split(",")[0]+")"; 
+     elm27.style.background = "url("+myArr[26].picture.split(",")[0]+")"; 
+     elm28.style.background = "url("+myArr[27].picture.split(",")[0]+")"; 
+     elm29.style.background = "url("+myArr[28].picture.split(",")[0]+")"; 
+     elm30.style.background = "url("+myArr[29].picture.split(",")[0]+")"; 
 
-     elm21.style.background = "url("+myArr[20].picture+")";  //引号括起来的地方都当作是字符串
-     elm22.style.background = "url("+myArr[21].picture+")"; 
-     elm23.style.background = "url("+myArr[22].picture+")"; 
-     elm24.style.background = "url("+myArr[23].picture+")"; 
-     elm25.style.background = "url("+myArr[24].picture+")"; 
-     elm26.style.background = "url("+myArr[25].picture+")"; 
-     elm27.style.background = "url("+myArr[26].picture+")"; 
-     elm28.style.background = "url("+myArr[27].picture+")"; 
-     elm29.style.background = "url("+myArr[28].picture+")"; 
-     elm30.style.background = "url("+myArr[29].picture+")"; 
+     elm31.style.background = "url("+myArr[30].picture.split(",")[0]+")";  //引号括起来的地方都当作是字符串
+     elm32.style.background = "url("+myArr[31].picture.split(",")[0]+")"; 
+     elm33.style.background = "url("+myArr[32].picture.split(",")[0]+")"; 
+     elm34.style.background = "url("+myArr[33].picture.split(",")[0]+")"; 
+     elm35.style.background = "url("+myArr[34].picture.split(",")[0]+")"; 
+     elm36.style.background = "url("+myArr[35].picture.split(",")[0]+")"; 
+     elm37.style.background = "url("+myArr[36].picture.split(",")[0]+")"; 
+     elm38.style.background = "url("+myArr[37].picture.split(",")[0]+")"; 
+     elm39.style.background = "url("+myArr[38].picture.split(",")[0]+")"; 
+     elm40.style.background = "url("+myArr[39].picture.split(",")[0]+")"; 
 
-     elm31.style.background = "url("+myArr[30].picture+")";  //引号括起来的地方都当作是字符串
-     elm32.style.background = "url("+myArr[31].picture+")"; 
-     elm33.style.background = "url("+myArr[32].picture+")"; 
-     elm34.style.background = "url("+myArr[33].picture+")"; 
-     elm35.style.background = "url("+myArr[34].picture+")"; 
-     elm36.style.background = "url("+myArr[35].picture+")"; 
-     elm37.style.background = "url("+myArr[36].picture+")"; 
-     elm38.style.background = "url("+myArr[37].picture+")"; 
-     elm39.style.background = "url("+myArr[38].picture+")"; 
-     elm40.style.background = "url("+myArr[39].picture+")"; 
-
-     elm41.style.background = "url("+myArr[40].picture+")";  //引号括起来的地方都当作是字符串
-     elm42.style.background = "url("+myArr[41].picture+")"; 
-     elm43.style.background = "url("+myArr[42].picture+")"; 
-     elm44.style.background = "url("+myArr[43].picture+")"; 
-     elm45.style.background = "url("+myArr[44].picture+")"; 
-     elm46.style.background = "url("+myArr[45].picture+")"; 
-     elm47.style.background = "url("+myArr[46].picture+")"; 
-     elm48.style.background = "url("+myArr[47].picture+")"; 
+     elm41.style.background = "url("+myArr[40].picture.split(",")[0]+")";  //引号括起来的地方都当作是字符串
+     elm42.style.background = "url("+myArr[41].picture.split(",")[0]+")"; 
+     elm43.style.background = "url("+myArr[42].picture.split(",")[0]+")"; 
+     elm44.style.background = "url("+myArr[43].picture.split(",")[0]+")"; 
+     elm45.style.background = "url("+myArr[44].picture.split(",")[0]+")"; 
+     elm46.style.background = "url("+myArr[45].picture.split(",")[0]+")"; 
+     elm47.style.background = "url("+myArr[46].picture.split(",")[0]+")"; 
+     elm48.style.background = "url("+myArr[47].picture.split(",")[0]+")"; 
 
 
 

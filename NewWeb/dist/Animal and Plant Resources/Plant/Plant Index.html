@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>动植物资源</title>
+	<title>植物资源</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -92,11 +92,11 @@
 			<aside id="fh5co-aside" role="complementary" class="border js-fullheight " style=" margin-top: 70px; padding-top: 150px; overflow-y: hidden; padding-bottom: 150px; background-image: url(../../images/First.jpg);height: 665px "  >
 				<nav id="fh5co-main-menu" role="navigation">
 					<ul>
-						<li ><a href="../../index.html" >首页</a></li>
+						<li ><a href="./../index.html" >首页</a></li>
 						<li><a href="../../Brief Introduction/Brief Introduction.html">保护区概况</a></li>
 						<li><a href="../../Work Trends/Work Trends.html">通知公告</a></li>
-						<li class="fh5co-active" ><a href="../../Animal and Plant Resources/Animal and Plant Resources.html">动植物资源</a></li>
-						<li><a href="../../View.html">保护区GIS系统</a></li>
+						<li class="fh5co-active" ><a href="Protective Plant.html">植物资源</a></li>
+						<li><a href="10.10.11.94/shp">保护区GIS系统</a></li>
 					</ul>
 				</nav>  <!-- fh5co-main-menu -->
 				<div class="fh5co-footer" style="margin-bottom: 70px">
@@ -106,12 +106,26 @@
 
 			<div id="fh5co-main" style="position: relative;">
 				<div class="row"  >
-					<div class="col-md-2">
-						<button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='../../Brief Introduction/Brief Introduction.html'">动物资源</button>
-					</div>
-					<div  class="col-md-2" style="position:relative; top: 20px; left: 25px"  onclick="location.href ='PictureNews.html'">
-						<button class="btn btn-block btn-info">植物资源</button>
-					</div>
+                            <div class="col-md-2">
+                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Protective Plant.html'">保护植物</button>
+                            </div>   <!-- col-md-2 -->
+                            <div  class="col-md-2" style="position:relative; top: 20px; left: 25px"  onclick="location.href='Plant Table.html'">
+                                <button class="btn btn-block btn-info">植物名录</button>
+                            </div>   <!-- col-md-2 -->
+                            <div class="col-md-2">
+                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Plant Index.html'">植物资源</button>
+                            </div>   <!-- col-md-2 -->
+
+
+                            <div  class="col-md-2" style="position:relative; top: 20px; left: 25px"   >
+                            	<div class="input-group" >
+                            		<input type="text" class="form-control" style="height: 45px;width: 150px" id="InputText">
+                            		<span class="input-group-addon" style="cursor: pointer;" id="Search">Search</span>
+                            	</div>
+
+                            </div>   <!-- col-md-2 -->
+
+                            </div>   <!-- col-md-2 -->
 					<div class="fh5co-narrow-content">
 
 
@@ -462,6 +476,7 @@
 
 	<script src="../../js/Function/RandomPlants.js"></script>
 	<script src="../../js/Function/PickUpPlants.js"></script>
+	<script src="../../js/Function/Search.js"></script>
 	
 
 
