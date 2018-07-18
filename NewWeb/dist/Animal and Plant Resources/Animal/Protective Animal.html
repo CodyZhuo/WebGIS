@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>植物信息</title>
+    <title>保护动物</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -93,8 +93,8 @@
                         <ul>
                         <li><a href="http://10.10.11.94/WebGIS/" >首页</a></li>
                         <li><a href="../../Brief Introduction/Brief Introduction.html">保护区概况</a></li>
-                        <li><a href="../Animal/Protective Animal.html.html">动物资源</a></li>
-                        <li class="fh5co-active" ><a href="Protective Plant.html">植物资源</a></li>
+                        <li  class="fh5co-active" ><a href="Protective Animal.html">动物资源</a></li>
+                        <li><a href="http://10.10.11.94:8090/NewWeb/dist/Animal and Plant Resources/Plant/Protective Plant.html">植物资源</a></li>
                         <li><a href="../../Environmental Monitoring/Water Quality Monitoring/Water Quality Monitoring.html">环境监测</a></li>
                         <li><a href="http://10.10.11.94/shp" target="blank">保护区GIS系统</a></li>
                         <li><a href="">数据库更新</a></li>
@@ -109,59 +109,50 @@
 
                         <div class="row"  >
                             <div class="col-md-2">
-                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Protective Plant.html'">保护植物</button>
+                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Protective Animal.html'">保护动物</button>
                             </div>   <!-- col-md-2 -->
-                            <div  class="col-md-2" style="position:relative; top: 20px; left: 25px"  onclick="location.href='Plant Table.html'">
-                                <button class="btn btn-block btn-info">植物名录</button>
+                            <div  class="col-md-2" style="position:relative; top: 20px; left: 25px"  onclick="location.href='Animal Table.html'">
+                                <button class="btn btn-block btn-info">动物名录</button>
                             </div>   <!-- col-md-2 -->
                             <div class="col-md-2">
-                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Plant Index.html'">植物资源</button>
+                                <button   class=" btn btn-block btn-info"  style="position:relative; top: 20px; left: 25px"  onclick="location.href='Animal Index.html'">动物资源</button>
                             </div>   <!-- col-md-2 -->
 
 
                             <div  class="col-md-2" style="position:relative; top: 20px; left: 25px"   >
-                                <div class="input-group" >
-                                    <input type="text" class="form-control" style="height: 45px;width: 150px" id="InputText">
-                                    <span class="input-group-addon" style="cursor: pointer;" id="Search">Search</span>
-                                </div>
+                            	<div class="input-group" >
+                            		<input type="text" class="form-control" style="height: 45px;width: 150px" id="InputText">
+                            		<span class="input-group-addon" style="cursor: pointer;" id="Search">Search</span>
+                            	</div>
 
                             </div>   <!-- col-md-2 -->
 
-                            </div>   <!-- col-md-2 -->
-                            <div class="fh5co-narrow-content">
-                                <div class="row row-bottom-padded-md">
-                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <img class="img-responsive" id="Pic1">
-                                    </div>   <!-- col-md-6 animate-box -->
-                                    <div class="col-md-6 animate-box"  data-animate-effect="fadeInLeft" >
-                                        <h2 class="fh5co-heading" id="P_Name"></h2>
-                                        <p id="PlArt"></p>
-                                    </div>   <!-- col-md-6 animate-box -->
-                                </div>   <!-- row row-bottom-padded-md -->
-
-                                <div class="row row-bottom-padded-md" style="margin-left: 2px;padding-bottom: 10px">
-                                <div class="row row-bottom-padded-md">
-                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <img class="img-responsive" id="Pic2">
-                                    </div>   <!-- col-md-6 animate-box -->
-                                      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <img class="img-responsive" id="Pic3">
-                                    </div>   <!-- col-md-6 animate-box -->
-                                </div>   <!-- row row-bottom-padded-md -->
 
 
 
 
-<!--                             <div class="fh5co-narrow-content" >
-                              <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <img class="img-responsive" id="Pic2">
-                                    </div>
-                            </div>
-                                 <div class="fh5co-narrow-content">
-                              <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <img class="img-responsive" id="Pic3">
-                                    </div>
-                            </div>    -->
+
+
+
+                            <div class="fh5co-narrow-content" >
+                                <div>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</div>
+      <table class="table table-striped table-hover "  >
+        <thead>
+            <tr><th>保护级别</th><th>名称</th><th>别名</th></tr>
+        </thead>
+        <tbody id="Table" >
+
+        </tbody>
+    </table>
+
+                             </div>
+
+
+
+
+
+
+
 
                         </div>   <!-- row -->
                     </div>   <!-- fh5co-main -->
@@ -182,8 +173,10 @@
 
                         <!-- MAIN JS -->
                         <script src="../../js/main.js"></script>
-                        <script src="../../js/Function/Three Plants.js"></script>
-                        <script src="../../js/Function/Search.js"></script>
+
+                        <!-- <script src="../../js/Function/Protective Plant.js"></script>
+
+                        <script src="../../js/Function/Search.js"></script> -->
 
 
 
